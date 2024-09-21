@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Register - Bytewise</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+   </head>
+   <body>
+      <h2>Register for Bytewise</h2>
+      <form id="registerForm">
+         <p>Email: <input id="reg-email" type="email" required></p>
+         <p>Password: <input id="reg-password" type="password" required></p>
+         <input type="button" value="Register" onclick="register()">
+         <p>Already have an account? <a href="index.html">Login here</a></p>
+      </form>
+
+      <script src="main.js"></script>
+      <script>
+        function register() {
+            var email = document.getElementById('reg-email').value;
+            var password = document.getElementById('reg-password').value;
+            
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    window.location.href = 'success.html'; // Redirect to success page
+                })
+                .catch(e => alert(e.message));
+        }
+      </script>
+   </body>
+</html>
