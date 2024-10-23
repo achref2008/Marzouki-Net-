@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e9ecef; /* Light grey background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+}
+
+h2 {
+    color: #007bff; /* Blue color for h2 */
+}
+
+h3 {
+    color: #343a40; /* Dark grey color for h3 */
+}
+
+ul {
+    list-style-type: square; /* Square bullets for lists */
+    padding-left: 20px; /* Indent list items */
+}
+
+.image-gallery {
+    display: grid; /* Grid layout for image gallery */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between grid items */
+    margin-top: 20px; /* Space above the gallery */
+}
+
+.image-gallery img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.profile {
+    text-align: center; /* Center align profile section */
+    margin: 20px 0; /* Space above and below */
+}
+
+.profile-img {
+    width: 150px; /* Set width for profile image */
+    height: 150px; /* Set height for profile image */
+    border-radius: 50%; /* Circular image */
+    border: 3px solid white; /* White border around image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for profile image */
+}
+
+.profile h2 {
+    margin: 10px 0 5px 0; /* Space around the name */
+}
+
+.profile a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline for links */
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    margin-top: 40px; /* Space above footer */
+    padding: 20px; /* Padding inside footer */
+    background-color: #f8f9fa; /* Light background for footer */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align footer text */
+}
+
+footer h3 {
+    margin: 0; /* Remove default margin for footer heading */
+}
